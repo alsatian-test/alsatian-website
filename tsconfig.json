@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "declaration": true,
+        "sourceMap": true,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "jsx": "react"
+    },
+    "buildOnSave": true,
+    "compileOnSave": true,
+    "exclude": [
+        "./public/**/*.d.ts",
+        "./index.d.ts",
+        "./typings/globals/**/*.d.ts",
+        "./node_modules/**/*.*"
+    ],
+    "filesGlob": [
+        "./**/*.tsx",
+        "./**/*.ts",
+        "./typings/index.d.ts"
+    ],
+    "files": [
+        "./public/ts/app-component.tsx",
+        "./index.ts",
+        "./typings/index.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}

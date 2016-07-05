@@ -4,7 +4,8 @@
   "description": "Website for alsatian test framework (https://github.com/alsatian-test/alsatian)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/alsatian-test/alsatian-website/issues"
   },
-  "homepage": "https://github.com/alsatian-test/alsatian-website#readme"
+  "homepage": "https://github.com/alsatian-test/alsatian-website#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1"
+  }
 }
