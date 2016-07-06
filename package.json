@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alsatian-test/alsatian-website#readme",
   "dependencies": {
+    "alsatian": "^1.0.0-alpha.5",
     "express": "^4.14.0",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
