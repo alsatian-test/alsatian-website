@@ -1,4 +1,5 @@
 import * as React from "react";
+import * as ReactDOM from "react-dom";
 
 export default class AppComponent extends React.Component<any, any> {
    render() {
@@ -8,5 +9,5 @@ export default class AppComponent extends React.Component<any, any> {
 
 ReactDOM.render(
  <AppComponent />,
- document.getElementById('example')
+ document.getElementById("app")
 );

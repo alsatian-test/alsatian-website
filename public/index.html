@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Alsatian TypeScript test framework</title>
-    <script src="node_modules/react/dist/react.js"></script>
-    <script src="node_modules/react-dom/dist/react-dom.js"></script>
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script-->
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <!--script src="/node_modules/monaco-editor/min/vs/loader.js"></script-->
+    <script>
+    System.config({
+       defaultJSExtensions: true,
+       map: {
+           "react": "/node_modules/react/dist/react",
+           "react-dom": "/node_modules/react-dom/dist/react-dom",
+           "monaco-editor": "/node_modules/monaco-editor/min/vs/editor/editor.main",
+           //"vs": "/node_modules/monaco-editor/min/vs"
+       }
+     });
+     System.import("/ts/app-component.js")
+           .then(null, console.error.bind(console));
+    </script>
   </head>
   <body>
-    <div id="example"></div>
-    <script src="ts.app-component.js"></script>
+    <div id="app"></div>
   </body>
 </html>
