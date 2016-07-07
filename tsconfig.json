@@ -15,6 +15,7 @@
     "compileOnSave": true,
     "exclude": [
         "./public/**/*.d.ts",
+        "./server/**/*.d.ts",
         "./index.d.ts",
         "./typings/globals/**/*.d.ts",
         "./node_modules/**/*.*"
@@ -27,6 +28,8 @@
     "files": [
         "./public/ts/app-component.tsx",
         "./index.ts",
+        "./server/app.ts",
+        "./server/test-service.ts",
         "./typings/index.d.ts",
         "./typings/modules/react/index.d.ts"
     ],
