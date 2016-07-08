@@ -28,7 +28,7 @@ export default class AppComponent extends React.Component<any, any> {
          }
       };
 
-      httpRequest.send();
+      httpRequest.send(JSON.stringify({ testFixture: this.state.testCode }));
    }
 
    onTestCodeChange(event: KeyboardEvent) {

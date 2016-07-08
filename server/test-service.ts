@@ -1,14 +1,19 @@
 import * as Alsatian from "alsatian";
-import { app } from "./app";
+import * as Express from "express";
 
+export default class TestService {
 
-app.post("/api/test", (request: Express.Request, response: Express.Response) => {
-  let functionUnderTest: Function;
-  let testRunnner = new Alsatian.TestRunner();
-  let testFixture: any;
-  eval("x = " + request.body + "; functionUnderTest = x.function; testFixture = x.testFixture");
+  public constructor(app: Express.Application) {
+    app.post("/api/test", (request: Express.Request, response: Express.Response) => {
+      let functionUnderTest: Function;
+      let testRunnner = new Alsatian.TestRunner();
+      let testFixture: any;
+      console.log(request.body);
+      eval("x = " + request.body + "; functionUnderTest = x.function; testFixture = x.testFixture");
 
-  // build fake test set
+      // build fake test set
 
-  // run fake test set
-});
+      // run fake test set
+    });
+  }
+}
