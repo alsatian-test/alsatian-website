@@ -12,11 +12,9 @@ export default class TestService {
       let testRunnner = new Alsatian.TestRunner();
       let testFixture: any;
 
-      console.log("testFixture = eval(" + request.body + ");");
+      eval("testFixture = " + JSON.parse(request.body).testFixture);
 
-      eval("testFixture = eval(" + request.body + ");");
-
-      console.log(testFixture);
+      testFixture.function();
       // build fake test set
 
       // run fake test set

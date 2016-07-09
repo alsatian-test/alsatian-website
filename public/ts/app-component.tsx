@@ -22,6 +22,8 @@ export default class AppComponent extends React.Component<any, any> {
 
       httpRequest.open("POST", "/api/test");
 
+      httpRequest.setRequestHeader("ContentType", "application/json");
+
       httpRequest.onreadystatechange = (event: ProgressEvent) => {
          if (httpRequest.readyState === httpRequest.DONE) {
             this.setState({ response: httpRequest.response });
