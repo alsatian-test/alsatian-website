@@ -1,5 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import * as Redux from "redux";
+
+Redux.createStore
 
 export default class AppComponent extends React.Component<any, any> {
 
@@ -41,7 +44,6 @@ export default class AppComponent extends React.Component<any, any> {
       return <div>
                <textarea onChange={this.onTestCodeChange.bind(this)} value={this.state.testCode} />
                <button onClick={this.submitTests.bind(this)}>Test</button>
-               <div>{this.state.testCode}</div>
                <div>{JSON.stringify(this.state.response)}</div>
              </div>;
    }

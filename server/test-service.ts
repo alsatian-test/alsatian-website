@@ -16,9 +16,10 @@ export default class TestService {
 
       let testSet = new Alsatian.TestSet("./funky.js");
 
-      console.log(testSet);
-
-      testRunnner.run(testSet);
+      (testRunnner.run(testSet) as any).then((results: Array<any>) => {
+        console.log(results);
+        response.send(results);
+      })
       // build fake test set
 
       // run fake test set
