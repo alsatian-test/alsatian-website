@@ -1,1 +1,13 @@
+@import "variables";
+
 @import "core";
+
+nav {
+   background-color: $primary-color;
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
+nav h1 {
+   color: white;
