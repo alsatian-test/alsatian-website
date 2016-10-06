@@ -15,6 +15,16 @@ export default class AppComponent extends React.Component<any, any> {
                <nav>
                   <h1>Alsatian</h1>
                </nav>
+               <div class="billboard findbettername">
+                  <p>Alsatian helps you test atomically</p>
+               </div>
+               <section>
+                  <h2>Quick start</h2>
+                  <pre>npm install alsatian --save-dev</pre>
+                  <h2>Using the CLI?</h2>
+                  <p>You can use Alsatian straight in your CLI, but don't forget to install it globally!</p>
+                  <pre>npm install alsatian -g</pre>
+               </section>
              </div>;
    }
 }
