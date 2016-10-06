@@ -14,6 +14,7 @@ export default class AppComponent extends React.Component<any, any> {
       return <div>
                <nav>
                   <h1>Alsatian</h1>
+                  <a href="https://github.com/alsatian-test/alsatian">Github</a>
                </nav>
                <div class="billboard findbettername">
                   <p>Alsatian helps you test atomically</p>
