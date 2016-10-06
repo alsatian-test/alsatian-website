@@ -8,5 +8,8 @@ npm-debug.log
 typings
 *.d.ts
 
+#Sass
+*.css
+
 #Test
 coverage
