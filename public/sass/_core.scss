@@ -25,6 +25,14 @@ button {
    margin: 0.25em 0.5em;
 }
 
+.reason-to-use {
+   display: inline-block;
+   width: 33%;
+   vertical-align: top;
+   padding: 0.5em;
+   box-sizing: border-box;
+}
+
 button:hover {
    cursor: pointer;
    background-color: rgb(100, 212, 132);

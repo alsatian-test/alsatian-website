@@ -21,12 +21,27 @@ export default class AppComponent extends React.Component<any, any> {
                <section className="billboard findbettername">
                   <h1>Alsatian</h1>
                   <p>Alsatian helps you test atomically</p>
-                  <button type="button">Github</button><button type="button">Get started</button>
+                  <a href="https://github.com/alsatian-test/alsatian">
+                     <button type="button">Github</button>
+                  </a>
+                  <button type="button">Get started</button>
                </section>
                <section className="container">
                   <section>
                      <h2>Why Alsatian?</h2>
-                     <p>Points to be made in columns</p>
+                     <p>Great question, well like any good dog Alsatian has been built on three strong values:</p>
+                     <div className="reason-to-use">
+                        <h3>Smart and Fast</h3>
+                        <p>Test Case decorator, some stuff about functional cocverage, quick to write some bad ass tests. Not to mention it runs dead fast.</p>
+                     </div>
+                     <div className="reason-to-use">
+                        <h3>Robust and Loyal</h3>
+                        <p>Literally thousands of tests, CI process etc.</p>
+                     </div>
+                     <div className="reason-to-use">
+                        <h3>Helpful and Playful</h3>
+                        <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc.</p>
+                     </div>
                   </section>
                   <h2>Quick start</h2>
                   <h3>1) Install Node.js</h3>
@@ -56,6 +71,7 @@ export default class AppComponent extends React.Component<any, any> {
                   <pre>npm install alsatian -g</pre>
                   <h3>5) Celebrate</h3>
                   <p>Many congrats, now you can head on over to the tutorial</p>
+                  <button type="button">Continue your journey</button>
                </section>
              </div>;
    }
