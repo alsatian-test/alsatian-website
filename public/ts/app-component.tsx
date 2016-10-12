@@ -30,17 +30,19 @@ export default class AppComponent extends React.Component<any, any> {
                   <section>
                      <h2>Why Alsatian?</h2>
                      <p>Great question, well like any good dog Alsatian has been built on three strong values:</p>
-                     <div className="reason-to-use">
-                        <h3>Smart and Fast</h3>
-                        <p>Test Case decorator, some stuff about functional cocverage, quick to write some bad ass tests. Not to mention it runs dead fast.</p>
-                     </div>
-                     <div className="reason-to-use">
-                        <h3>Robust and Loyal</h3>
-                        <p>Literally thousands of tests, CI process etc.</p>
-                     </div>
-                     <div className="reason-to-use">
-                        <h3>Helpful and Playful</h3>
-                        <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc.</p>
+                     <div id="reasons-to-use">
+                        <div className="reason-to-use">
+                           <h3>Smart and Fast</h3>
+                           <p>Test Case decorator, some stuff about functional cocverage, quick to write some bad ass tests. Not to mention it runs dead fast.</p>
+                        </div>
+                        <div className="reason-to-use">
+                           <h3>Robust and Loyal</h3>
+                           <p>Literally thousands of tests, CI process etc.</p>
+                        </div>
+                        <div className="reason-to-use">
+                           <h3>Helpful and Playful</h3>
+                           <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc.</p>
+                        </div>
                      </div>
                   </section>
                   <h2>Quick start</h2>
