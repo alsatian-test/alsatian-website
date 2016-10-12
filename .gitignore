@@ -13,3 +13,4 @@ typings
 
 #Test
 coverage
+.nyc_output
