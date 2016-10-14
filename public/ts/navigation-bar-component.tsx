@@ -13,7 +13,7 @@ export default class NavigationBarComponent extends React.Component<any, any> {
    }
 
    render() {
-      return   <nav className="navigation-bar">
+      return   <nav className="navigation-bar" onBlur={this.closeMenu.bind(this)}>
                   <div className="container">
                      <h1>Alsatian</h1>
                      <a href="https://github.com/alsatian-test/alsatian">Github</a>
@@ -26,6 +26,12 @@ export default class NavigationBarComponent extends React.Component<any, any> {
    toggleMenu() {
       this.setState({
          isMenuOpen: !this.state.isMenuOpen
+      });
+   }
+
+   closeMenu() {
+      this.setState({
+         isMenuOpen: false
       });
    }
 }
