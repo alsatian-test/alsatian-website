@@ -46,7 +46,7 @@ export default class AppComponent extends React.Component<any, any> {
                      </div>
                   </section>
                   <h2>Quick start</h2>
-                  <ol>
+                  <ol id="quick-start-steps">
                      <li>
                         <h3>Install Node.js</h3>
                         <p>If you have it already then congratulations, you can move straight to step 2. Otherwise <a>link to installing node.js</a>. Quick bit of info about creating a new node project.</p>
