@@ -68,7 +68,7 @@ export default class AppComponent extends React.Component<any, any> {
                               public ensureAlsatianExists() {
                                  Expect(alsatian).toBeDefined();
                               }
-                           }`.replace(/       /g, "")}
+                           }`.replace(/         /g, "")}
                         </pre>
                      </li>
                      <li>
