@@ -52,7 +52,7 @@ button:hover {
    margin: 0 auto;
 }
 
-nav {
+.navigation-bar {
    background-color: rgb(0, 212, 132);
    position: fixed;
    top: 0;
@@ -60,9 +60,19 @@ nav {
    width: 100%;
 }
 
-nav h1 {
+.navigation-bar h1 {
    color: white;
    display: inline-block;
+}
+
+.navigation-menu {
+   overflow: hidden;
+   max-height: 0;
+   transition: max-height 0.4s ease;
+}
+
+.navigation-menu.open {
+   max-height: 500px;
 }
 
 #menu-button {
