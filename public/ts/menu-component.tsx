@@ -11,9 +11,18 @@ export default class MenuComponent extends React.Component<any, any> {
    render() {
       return   <nav className={ this.props.open ? "navigation-menu open": "navigation-menu"}>
                   <ul>
-                     <li>One</li>
-                     <li>Two</li>
-                     <li>Three</li>
+                     <a href="/get-started">
+                        <li>Get started</li>
+                     </a>
+                     <a href="/tutorials">
+                        <li>Tutorials</li>
+                     </a>
+                     <a href="/blog">
+                        <li>Blog</li>
+                     </a>
+                     <a href="/documentation">
+                        <li>Documentation</li>
+                     </a>
                   </ul>
                </nav>;
    }
