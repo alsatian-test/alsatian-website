@@ -33,7 +33,7 @@ export default class AppComponent extends React.Component<any, any> {
                         </div>
                         <div className="reason-to-use">
                            <h3>Robust and Loyal</h3>
-                           <p>Literally thousands of tests, CI process etc.</p>
+                           <p>Literally thousands of tests, CI process etc. Active on GitHub things get done son</p>
                         </div>
                         <div className="reason-to-use">
                            <h3>Helpful and Playful</h3>
