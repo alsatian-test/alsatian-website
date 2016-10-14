@@ -27,6 +27,7 @@
     ],
     "files": [
         "./public/ts/app-component.tsx",
+        "./public/ts/navigation-bar-component.tsx",
         "./public/ts/tdd-tutor-poc.tsx",
         "./index.ts",
         "./server/app.ts",

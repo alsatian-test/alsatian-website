@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as Redux from "redux";
+import NavigationBarComponent from "./navigation-bar-component";
 
 Redux.createStore
 
@@ -12,12 +13,7 @@ export default class AppComponent extends React.Component<any, any> {
 
    render() {
       return <div>
-               <nav>
-                  <div className="container">
-                     <h1>Alsatian</h1>
-                     <a href="https://github.com/alsatian-test/alsatian">Github</a>
-                  </div>
-               </nav>
+               <NavigationBarComponent></NavigationBarComponent>
                <section className="billboard findbettername">
                   <h1>Alsatian</h1>
                   <p>Alsatian helps you test atomically</p>
