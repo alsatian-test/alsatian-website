@@ -27,6 +27,7 @@
     ],
     "files": [
         "./public/ts/app-component.tsx",
+        "./public/ts/components/pages/get-started-page-component.tsx",
         "./public/ts/components/pages/home-page-component.tsx",
         "./public/ts/menu-component.tsx",
         "./public/ts/navigation-bar-component.tsx",
