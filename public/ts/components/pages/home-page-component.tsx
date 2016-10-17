@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router";
 
 export default class HomePageComponent extends React.Component<any, any> {
 
@@ -13,10 +14,12 @@ export default class HomePageComponent extends React.Component<any, any> {
                      <img className="mascot" src="/images/mascot-main.png" />
                      <h1>Alsatian</h1>
                      <p>Alsatian helps you test atomically</p>
-                     <a href="https://github.com/alsatian-test/alsatian">
-                        <button type="button">Github</button>
-                     </a>
-                     <button type="button">Get started</button>
+                     <Link to="/get-started">
+                        <button type="button">Get started</button>
+                     </Link>
+                     <Link to="/changelog">
+                        <button type="button">v 1.0.0-beta-10</button>
+                     </Link>
                   </div>
                </section>
                <section className="container">
