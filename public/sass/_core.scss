@@ -12,7 +12,18 @@ body {
 .billboard {
    text-align: center;
    background: #eee;
-   padding: 1em;
+
+   .container {
+      position: relative;
+      padding: 1em;
+
+      img.mascot {
+          height: 348px;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+   }
 }
 
 #quick-start-steps {
@@ -53,6 +64,7 @@ button:hover {
 }
 
 .navigation-bar {
+   z-index: 100;
    background-color: rgb(0, 212, 132);
    position: fixed;
    top: 0;

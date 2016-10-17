@@ -15,12 +15,15 @@ export default class AppComponent extends React.Component<any, any> {
       return <div>
                <NavigationBarComponent></NavigationBarComponent>
                <section className="billboard findbettername">
-                  <h1>Alsatian</h1>
-                  <p>Alsatian helps you test atomically</p>
-                  <a href="https://github.com/alsatian-test/alsatian">
-                     <button type="button">Github</button>
-                  </a>
-                  <button type="button">Get started</button>
+                  <div className="container">
+                     <img className="mascot" src="/images/mascot-main.png" />
+                     <h1>Alsatian</h1>
+                     <p>Alsatian helps you test atomically</p>
+                     <a href="https://github.com/alsatian-test/alsatian">
+                        <button type="button">Github</button>
+                     </a>
+                     <button type="button">Get started</button>
+                  </div>
                </section>
                <section className="container">
                   <section>
