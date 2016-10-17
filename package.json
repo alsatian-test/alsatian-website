@@ -1,37 +1,38 @@
 {
-  "name": "alsatian-website",
-  "version": "1.0.0",
-  "description": "Website for alsatian test framework (https://github.com/alsatian-test/alsatian)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alsatian-test/alsatian-website.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alsatian-test/alsatian-website/issues"
-  },
-  "homepage": "https://github.com/alsatian-test/alsatian-website#readme",
-  "dependencies": {
-    "alsatian": "^1.0.0-alpha.6",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "monaco-editor": "^0.5.1",
-    "react": "^15.2.0",
-    "react-dom": "^15.2.0",
-    "react-router": "^2.8.1",
-    "redux": "^3.5.2",
-    "reflect-metadata": "^0.1.3",
-    "systemjs": "^0.19.31",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.1"
-  },
-  "devDependencies": {
-    "node-sass": "^3.10.1"
-  }
+   "name": "alsatian-website",
+   "version": "1.0.0",
+   "description": "Website for alsatian test framework (https://github.com/alsatian-test/alsatian)",
+   "main": "index.js",
+   "scripts": {
+      "build-sass": "node-sass --include-path scss public/sass/styles.scss public/css/styles.css",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node ./index.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/alsatian-test/alsatian-website.git"
+   },
+   "author": "",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/alsatian-test/alsatian-website/issues"
+   },
+   "homepage": "https://github.com/alsatian-test/alsatian-website#readme",
+   "dependencies": {
+      "alsatian": "^1.0.0-alpha.6",
+      "body-parser": "^1.15.2",
+      "express": "^4.14.0",
+      "monaco-editor": "^0.5.1",
+      "react": "^15.2.0",
+      "react-dom": "^15.2.0",
+      "react-router": "^2.8.1",
+      "redux": "^3.5.2",
+      "reflect-metadata": "^0.1.3",
+      "systemjs": "^0.19.31",
+      "typescript": "^1.8.10",
+      "typings": "^1.3.1"
+   },
+   "devDependencies": {
+      "node-sass": "^3.10.1"
+   }
 }
