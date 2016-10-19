@@ -37,7 +37,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                         </div>
                         <div className="reason-to-use">
                            <h3>Helpful and Playful</h3>
-                           <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc.</p>
+                           <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc. Supported by easy to read docs</p>
                         </div>
                      </div>
                   </section>
