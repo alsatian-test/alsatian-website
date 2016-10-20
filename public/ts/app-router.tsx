@@ -8,6 +8,7 @@ import NotFoundPageComponent from "./components/pages/not-found-page-component";
 import TutorialsPageComponent from "./components/pages/tutorials-page-component";
 import BlogPageComponent from "./components/pages/blog-page-component";
 import DocumentationPageComponent from "./components/pages/documentation-page-component";
+import GetStartedTutorialComponent from "./components/tutorials/getting-started-tutorial";
 
 
 export default class AppRouter extends React.Component<any, any> {
@@ -18,7 +19,9 @@ export default class AppRouter extends React.Component<any, any> {
                   <Route path="get-started" component={GetStartedPageComponent} />
                   <Route path="blog" component={BlogPageComponent} />
                   <Route path="documentation" component={DocumentationPageComponent} />
-                  <Route path="tutorials" component={TutorialsPageComponent} />
+                  <Route path="tutorials/" component={TutorialsPageComponent}>
+                     <Route path="get-started" component={GetStartedTutorialComponent} />
+                  </Route>
                   <Route path="*" component={NotFoundPageComponent} />
                </Route>
             </Router>

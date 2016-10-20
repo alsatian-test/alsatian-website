@@ -13,18 +13,8 @@ export default class TutorialsPageComponent extends React.Component<any, any> {
                         <h1>Tutorials</h1>
                      </div>
                   </section>
-                  <section className="container">
-                     <ul>
-                        <li>
-                           <h2>Tutorial one</h2>
-                        </li>
-                        <li>
-                           <h2>Tutorial two</h2>
-                        </li>
-                        <li>
-                           <h2>Tutorial three</h2>
-                        </li>
-                     </ul>
+                  <section className="container">                  
+                     {this.props.children}
                   </section>
                </div>;
       }
