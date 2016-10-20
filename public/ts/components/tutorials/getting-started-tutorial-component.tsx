@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router";
 
 export default class GetStartedTutorialComponent extends React.Component<any, any> {
 
@@ -50,7 +51,9 @@ export default class GetStartedTutorialComponent extends React.Component<any, an
                         <p>Many congrats, now you can head on over to the tutorial</p>
                      </li>
                   </ol>
-                  <button type="button">Continue your journey</button>
+                  <Link to="/tutorials/tdd">
+                     <button type="button">Continue your journey</button>
+                  </Link>
                </div>;
       }
 }
