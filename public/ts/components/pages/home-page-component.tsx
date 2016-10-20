@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router";
-import GetStartedTutorialComponent from "../tutorials/getting-started-tutorial";
+import QuickStartTutorialComponent from "../tutorials/quick-start-tutorial-component";
 
 export default class HomePageComponent extends React.Component<any, any> {
 
@@ -42,7 +42,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                         </div>
                      </div>
                   </section>
-                  <GetStartedTutorialComponent />
+                  <QuickStartTutorialComponent />
                </section>
              </div>;
    }

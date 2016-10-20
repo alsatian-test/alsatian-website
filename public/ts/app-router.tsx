@@ -8,7 +8,7 @@ import NotFoundPageComponent from "./components/pages/not-found-page-component";
 import TutorialsPageComponent from "./components/pages/tutorials-page-component";
 import BlogPageComponent from "./components/pages/blog-page-component";
 import DocumentationPageComponent from "./components/pages/documentation-page-component";
-import GetStartedTutorialComponent from "./components/tutorials/getting-started-tutorial";
+import GetStartedTutorialComponent from "./components/tutorials/getting-started-tutorial-component"
 
 
 export default class AppRouter extends React.Component<any, any> {
