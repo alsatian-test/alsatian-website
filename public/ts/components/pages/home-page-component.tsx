@@ -15,7 +15,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                      <img className="mascot" src="/images/mascot-main.png" />
                      <h1>Alsatian</h1>
                      <p>Alsatian helps you test atomically</p>
-                     <Link to="/get-started">
+                     <Link to="/tutorials/get-started">
                         <button type="button">Get started</button>
                      </Link>
                      <Link to="/changelog">
