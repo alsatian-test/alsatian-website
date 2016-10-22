@@ -42,6 +42,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                         </div>
                      </div>
                   </section>
+                  <h2>Quick Start</h2>
                   <QuickStartTutorialComponent />
                </section>
              </div>;
