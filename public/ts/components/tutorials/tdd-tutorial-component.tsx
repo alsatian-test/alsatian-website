@@ -6,9 +6,12 @@ export default class TddTutorialComponent extends React.Component<any, any> {
       super();
    }
 
+   public static get defaultProps() {
+      return { title: "TDD" }
+   }
+
    render() {
       return   <div>
-                  <h2>TDD</h2>
                </div>;
       }
 }

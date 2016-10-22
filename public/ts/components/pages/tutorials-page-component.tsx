@@ -10,10 +10,10 @@ export default class TutorialsPageComponent extends React.Component<any, any> {
       return   <div>
                   <section className="billboard findbettername">
                      <div className="container">
-                        <h1>Tutorials</h1>
+                        <h1>{this.props.children.props.title}</h1>
                      </div>
                   </section>
-                  <section className="container">                  
+                  <section className="container">
                      {this.props.children}
                   </section>
                </div>;

@@ -7,9 +7,12 @@ export default class GetStartedTutorialComponent extends React.Component<any, an
       super();
    }
 
+   public static get defaultProps() {
+      return { title: "Get Started" }
+   }
+
    render() {
       return   <div>
-                  <h2>Quick start</h2>
                   <ol id="quick-start-steps">
                      <li>
                         <h3>Install Node.js</h3>

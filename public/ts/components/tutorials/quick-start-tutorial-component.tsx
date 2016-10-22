@@ -7,9 +7,12 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
       super();
    }
 
+   public static get defaultProps() {
+      return { title: "Quick Start" }
+   }
+
    render() {
       return   <div>
-                  <h2>Quick start</h2>
                   <ol id="quick-start-steps">
                      <li>
                         <h3>Install Alsatian</h3>
