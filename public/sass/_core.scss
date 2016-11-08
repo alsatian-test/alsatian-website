@@ -14,14 +14,29 @@ body {
    background: #eee;
 
    .container {
+      @include container($page-container-width);
       position: relative;
       padding: 1em;
 
-      img.mascot {
-          height: 348px;
-          position: absolute;
-          top: 0;
-          left: 0;
+      .mascot {
+         @include span(12 of 12);
+
+         @include breakpoint($tablet-width) {
+            @include span(4 of 12);
+         }
+
+         img {
+            height: 348px;
+         }
+      }
+
+      .main-info {
+         @include span(12 of 12);
+
+         @include breakpoint($tablet-width) {
+            @include span(8 of 12);
+            @include last;
+         }
       }
    }
 }
@@ -63,6 +78,6 @@ button:hover {
 
 .container {
    padding: 0 1em;
-   max-width: 1024px;
+   max-width: $page-container-width;
    margin: 0 auto;
 }

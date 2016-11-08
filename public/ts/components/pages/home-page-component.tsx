@@ -12,15 +12,19 @@ export default class HomePageComponent extends React.Component<any, any> {
       return <div>
                <section className="billboard findbettername">
                   <div className="container">
-                     <img className="mascot" src="/images/mascot-main.png" />
-                     <h1>Alsatian</h1>
-                     <p>Alsatian helps you test atomically</p>
-                     <Link to="/tutorials/get-started">
-                        <button type="button">Get started</button>
-                     </Link>
-                     <Link to="/changelog">
-                        <button type="button">v 1.0.0-beta-10</button>
-                     </Link>
+                     <div className="mascot">
+                        <img src="/images/mascot-main.png" />
+                     </div>
+                     <div className="main-info">
+                        <h1>Alsatian</h1>
+                        <p>Alsatian helps you test atomically</p>
+                        <Link to="/tutorials/get-started">
+                           <button type="button">Get started</button>
+                        </Link>
+                        <Link to="/changelog">
+                           <button type="button">v 1.0.0-beta-10</button>
+                        </Link>
+                     </div>
                   </div>
                </section>
                <section className="container">
