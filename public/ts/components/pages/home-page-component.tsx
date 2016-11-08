@@ -6,6 +6,10 @@ export default class HomePageComponent extends React.Component<any, any> {
 
    public constructor() {
       super();
+
+      setTimeout(() => {
+
+      }, 1000);
    }
 
    render() {

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router";
+import * as highlight from "highlight.js";
 
 export default class QuickStartTutorialComponent extends React.Component<any, any> {
 
@@ -11,17 +12,26 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
       return { title: "Quick Start" }
    }
 
+   public componentDidMount() {
+      console.log("mounted");
+      for (let codeBlock of document.getElementsByTagName("code")) {
+         console.log(codeBlock);
+         hljs.highlightBlock(codeBlock);
+      }
+   }
+
    render() {
       return   <div>
                   <ol id="quick-start-steps">
                      <li>
                         <h3>Install Alsatian</h3>
-                        <pre>npm install alsatian --save-dev</pre>
+                        <pre><code className="powershell">npm install alsatian --save-dev</code></pre>
                      </li>
                      <li>
                         <h3>Write your first test</h3>
                         <p>Simply create a spec file paste this code and save it.</p>
                         <pre>
+                           <code className="typescript">
                            {`
                            import { Test, Expect } from "alsatian";
                            import * as Alsatian from "alsatian";
@@ -33,6 +43,7 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                                  Expect(alsatian).toBeDefined();
                               }
                            }`.replace(/         /g, "")}
+                           </code>
                         </pre>
                      </li>
                      <li>
