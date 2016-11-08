@@ -41,15 +41,15 @@ button {
 }
 
 #reasons-to-use {
-   margin: 0 -0.5em;
-}
+   @include container;
 
-.reason-to-use {
-   display: inline-block;
-   width: 33%;
-   vertical-align: top;
-   padding: 0.5em;
-   box-sizing: border-box;
+   .reason-to-use {
+      @include span(4 of 12);
+
+      &:nth-child(3n) {
+         @include last;
+      }
+   }
 }
 
 button:hover {
