@@ -19,8 +19,11 @@ export default class NavigationBarComponent extends React.Component<any, any> {
                      <Link to="/">
                         <h1>Alsatian</h1>
                      </Link>
-                     <a href="https://github.com/alsatian-test/alsatian" className="icon-link">
+                     <a href="https://www.github.com/alsatian-test/alsatian" className="icon-link">
                         <img src="/images/github-sillhouette.svg"/>
+                     </a>
+                     <a href="https://www.npmjs.com/package/alsatian" className="icon-link">
+                        <img src="/images/npm-logo.svg"/>
                      </a>
                   </div>
                   <button id="menu-button" onClick={this.toggleMenu.bind(this)}>Menu</button>
