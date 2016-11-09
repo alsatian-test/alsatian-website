@@ -17,35 +17,17 @@
         "./public/**/*.d.ts",
         "./server/**/*.d.ts",
         "./index.d.ts",
+        "./**/*.d.ts",
         "./typings/globals/**/*.d.ts",
         "./node_modules/**/*.*"
     ],
     "filesGlob": [
-        "./**/*.tsx",
-        "./**/*.ts",
-        "./typings/index.d.ts"
-    ],
-    "files": [
-        "./public/ts/app-component.tsx",
-        "./public/ts/app-router.tsx",
-        "./public/ts/components/elements/code-block.component.tsx",
-        "./public/ts/components/pages/blog-page-component.tsx",
-        "./public/ts/components/pages/documentation-page-component.tsx",
-        "./public/ts/components/pages/home-page-component.tsx",
-        "./public/ts/components/pages/not-found-page-component.tsx",
-        "./public/ts/components/pages/tutorials-page-component.tsx",
-        "./public/ts/components/tutorials/getting-started-tutorial-component.tsx",
-        "./public/ts/components/tutorials/quick-start-tutorial-component.tsx",
-        "./public/ts/components/tutorials/tdd-tutorial-component.tsx",
-        "./public/ts/menu-component.tsx",
-        "./public/ts/navigation-bar-component.tsx",
-        "./public/ts/tdd-tutor-poc.tsx",
-        "./index.ts",
-        "./server/app.ts",
-        "./server/test-service.ts",
-        "./typings/index.d.ts"
+        "./public/**/*.tsx",
+        "./public/**/*.ts",
+        "./server/**/*.tsx",
+        "./server/**/*.ts"
     ],
     "atom": {
-        "rewriteTsconfig": true
+        "rewriteTsconfig": false
     }
 }
