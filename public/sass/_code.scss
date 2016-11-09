@@ -1,0 +1,15 @@
+pre code.language-typescript {
+   .token {
+      &.keyword {
+         color: blue;
+      }
+
+      &.class-name, &.function {
+         color: green;
+      }
+
+      &.string {
+         color: red;
+      }
+   }
+}

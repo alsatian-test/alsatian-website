@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router";
-import * as highlight from "highlight.js";
+import CodeBlock from "../elements/code-block.component";
 
 export default class QuickStartTutorialComponent extends React.Component<any, any> {
 
@@ -10,14 +10,6 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
 
    public static get defaultProps() {
       return { title: "Quick Start" }
-   }
-
-   public componentDidMount() {
-      console.log("mounted");
-      for (let codeBlock of document.getElementsByTagName("code")) {
-         console.log(codeBlock);
-         hljs.highlightBlock(codeBlock);
-      }
    }
 
    render() {
@@ -30,10 +22,9 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                      <li>
                         <h3>Write your first test</h3>
                         <p>Simply create a spec file paste this code and save it.</p>
-                        <pre>
-                           <code className="typescript">
-                           {`
-                           import { Test, Expect } from "alsatian";
+                        <CodeBlock>
+                           {
+                          `import { Test, Expect } from "alsatian";
                            import * as Alsatian from "alsatian";
 
                            export class AlsatianTests {
@@ -43,8 +34,7 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                                  Expect(alsatian).toBeDefined();
                               }
                            }`.replace(/         /g, "")}
-                           </code>
-                        </pre>
+                           </CodeBlock>
                      </li>
                      <li>
                         <h3>Run your first test</h3>

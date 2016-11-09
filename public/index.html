@@ -4,11 +4,10 @@
       <meta charset="UTF-8" />
       <title>Alsatian TypeScript test framework</title>
       <link href="/css/styles.css" rel="stylesheet" type="text/css">
+      <link href="/node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="/node_modules/systemjs/dist/system.src.js"></script>
-      <script src="/node_modules/highlight.js/lib/highlight.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/typescript.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
+      <script src="js"></script>
       <!--script src="/node_modules/monaco-editor/min/vs/loader.js"></script-->
       <script>
       System.config({
@@ -19,7 +18,8 @@
             "react-router": "/node_modules/react-router/umd/reactrouter",
             "redux": "/node_modules/redux/dist/redux",
             "monaco-editor": "/node_modules/monaco-editor/min/vs/editor/editor.main",
-            "highlight.js": "/node_modules/highlight.js/lib/highlight"
+            "prismjs": "/node_modules/prismjs/prism",
+            "prismjs.line-numbers": "/node_modules/prismjs/plugins/line-numbers/prism-line-numbers"
             //"vs": "/node_modules/monaco-editor/min/vs"
          }
       });
