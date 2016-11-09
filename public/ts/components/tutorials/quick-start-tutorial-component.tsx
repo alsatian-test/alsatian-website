@@ -15,6 +15,10 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
 
    render() {
       return   <div>
+                  <p>If you've not installed Node.js or TypeScript yet then you'll probably need a bit more help but fear not, help is at hand!</p>  
+                  <Link to="/tutorials/get-started">
+                     <button type="button">Full getting started</button>
+                  </Link>
                   <ol id="quick-start-steps">
                      <InstructionStepComponent title="Install Alsatian">
                         <pre><code className="powershell">npm install alsatian --save-dev</code></pre>
