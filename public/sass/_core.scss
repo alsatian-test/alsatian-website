@@ -59,8 +59,8 @@ h3 {
       &::before {
          content: counter(step-counter);
          background: $primary-color;
-         display: inline-block;
          float: left;
+         position: relative;
          font-size: 1.5em;
          font-weight: bold;
          color: white;
@@ -70,12 +70,41 @@ h3 {
          text-align: center;
          margin: 0.25em 0.5em;
          margin-left: 0;
+         left: 0;
+         transition: left 0.6s ease, transform 0.6s ease;
+         transform: rotate(0deg);
+      }
+
+      &[data-transparent='true']{
+      
+        &::before {
+            left: -2em;
+            transform: rotate(-360deg);
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0.5em;
+            opacity: 0;
+        }
+
+        hr {
+         max-width: 0;
+        }
       }
 
       h3 {
          margin: 0;
          padding: 0.5em;
-         border-bottom: solid 2px $primary-color;
+         opacity: 1;
+         transition: opacity 0.6s ease;
+      }
+
+      hr {
+          border: solid 1px $primary-color;
+         margin: 0;
+         max-width: 100%;
+         transition: max-width 0.6s ease;
       }
    }
 }
