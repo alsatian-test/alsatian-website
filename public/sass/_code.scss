@@ -1,15 +1,21 @@
-pre code.language-typescript {
-   .token {
-      &.keyword {
-         color: blue;
-      }
+pre {
 
-      &.class-name, &.function {
-         color: green;
-      }
+   overflow-x: auto;
 
-      &.string {
-         color: red;
+   code.language-typescript {
+
+      .token {
+         &.keyword {
+            color: blue;
+         }
+
+         &.class-name, &.function {
+            color: green;
+         }
+
+         &.string {
+            color: red;
+         }
       }
    }
 }
