@@ -1,13 +1,13 @@
 import * as React from "react";
-import * as Prism from "prismjs";
+import "prismjs";
 import "prismjs.line-numbers";
 
 export default class CodeBlock extends React.Component<any, any> {
 
    private _language: string = "typescript";
 
-   private _buildContent() {
-      return { __html: Prism.highlight(this.props.children, Prism.languages.javascript)}
+   private _buildContent(): any {
+      return { __html: Prism.highlight(this.props.children, (Prism.languages as any)["javascript"])};
    }
 
    render() {

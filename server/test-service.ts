@@ -14,7 +14,8 @@ export default class TestService {
       let testFixtures: any = {};
       FileSystem.writeFileSync("funky.js", JSON.parse(request.body).testFixture);
 
-      let testSet = new Alsatian.TestSet("./funky.js");
+      let testSet = Alsatian.TestSet.create();
+      testSet.addTestsFromFiles("./funky.js");
 
       (testRunnner.run(testSet) as any).then((results: Array<any>) => {
         console.log(results);
