@@ -9,8 +9,8 @@
     "build-typescript": "tsc",
     "dev": "npm-run-all --parallel start expose-to-networked-devices",
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
