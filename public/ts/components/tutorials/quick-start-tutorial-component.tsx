@@ -17,7 +17,7 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
       return   <div>
                   <p>Below we've made some assumptions that you have Node.js and TypeScript installed and are familiar with creating projects for them. If you've not then you'll probably need a bit more help but fear not, help is at hand!</p>  
                   <Link to="/tutorials/get-started">
-                     <button id="#no-assumptions-button" type="button">Make no assumptions</button>
+                     <button id="no-assumptions-button" type="button">Make no assumptions</button>
                   </Link>
                   <ol id="quick-start-steps">
                      <InstructionStepComponent title="Install Alsatian">
