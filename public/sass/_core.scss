@@ -17,6 +17,12 @@ h3 {
    font-size: 1.5em
 }
 
+a {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: $font-bold;
+}
+
 .billboard {
    text-align: center;
    background: #eee;
