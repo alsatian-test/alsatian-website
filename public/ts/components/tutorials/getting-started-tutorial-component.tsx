@@ -24,6 +24,7 @@ export default class GetStartedTutorialComponent extends React.Component<any, an
                      <li>
                         <h3>Install Alsatian</h3>
                         <pre>npm install alsatian --save-dev</pre>
+                        <p>If you're favourite package manager is not being used we're open to supporting it, simply log a ticket on <a href="https://www.github.com/alsatian-test/alsatian/issues/new">GitHub</a> and we'll get on it!</p>
                      </li>
                      <li>
                         <h3>Write your first test</h3>

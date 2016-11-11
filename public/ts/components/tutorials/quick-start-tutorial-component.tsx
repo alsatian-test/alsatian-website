@@ -15,12 +15,13 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
 
    render() {
       return   <div>
-                  <p>If you've not installed Node.js or TypeScript yet then you'll probably need a bit more help but fear not, help is at hand!</p>  
+                  <p>Below we've made some assumptions that you have Node.js and TypeScript installed and are familiar with creating projects for them. If you've not then you'll probably need a bit more help but fear not, help is at hand!</p>  
                   <Link to="/tutorials/get-started">
-                     <button type="button">Full getting started</button>
+                     <button id="#no-assumptions-button" type="button">Make no assumptions</button>
                   </Link>
                   <ol id="quick-start-steps">
                      <InstructionStepComponent title="Install Alsatian">
+                        <p>Good news, Alsatian is on NPM! So this step is super easy! Simply put the below into you're favourite CLI.</p>
                         <pre><code className="powershell">npm install alsatian --save-dev</code></pre>
                      </InstructionStepComponent>
                      <InstructionStepComponent title="Write your first test">
@@ -50,7 +51,7 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                      </InstructionStepComponent>
                   </ol>
                   <Link to="/tutorials/tdd">
-                     <button type="button">Continue your journey</button>
+                     <button id="continue-journey-button" type="button">Continue your journey</button>
                   </Link>
                </div>;
       }
