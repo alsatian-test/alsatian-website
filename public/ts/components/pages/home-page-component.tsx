@@ -20,7 +20,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                         <img src="/images/mascot-main.png" />
                      </div>
                      <div className="main-info">
-                        <h1>Alsatian</h1>
+                        <img id="alsatian-logo" src="/images/alsatian-logo.png" />
                         <p>Alsatian helps you test atomically</p>
                         <Link to="/tutorials/get-started">
                            <button type="button">Get started</button>

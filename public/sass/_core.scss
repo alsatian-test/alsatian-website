@@ -23,38 +23,6 @@ a {
     font-weight: $font-bold;
 }
 
-.billboard {
-   text-align: center;
-   background: #eee;
-
-   .container {
-      @include container($page-container-width);
-      position: relative;
-      padding: 1em;
-
-      .mascot {
-         @include span(12 of 12);
-
-         @include breakpoint($tablet-width) {
-            @include span(4 of 12);
-         }
-
-         img {
-            height: 348px;
-         }
-      }
-
-      .main-info {
-         @include span(12 of 12);
-
-         @include breakpoint($tablet-width) {
-            @include span(8 of 12);
-            @include last;
-         }
-      }
-   }
-}
-
 #quick-start-steps {
    padding: 0;
    list-style-type: none;
