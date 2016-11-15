@@ -32,6 +32,11 @@ export default class MenuComponent extends React.Component<any, any> {
                            <div>Documentation</div>
                         </Link>
                      </li>
+                     <li className="menu-item">
+                        <Link to="/about">
+                           <div>About</div>
+                        </Link>
+                     </li>
                   </ul>
                </nav>;
    }
