@@ -29,7 +29,11 @@
          }
 
          #alsatian-logo {
-             height: 128px;
+            height: 96px;
+
+            @include breakpoint($tablet-width) {
+                height:128px;
+            }
          }
       }
    }
