@@ -10,7 +10,8 @@
     "dev": "npm-run-all --parallel start expose-to-networked-devices",
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
     "start": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm run build",
+    "test": "alsatian \"./public/**/*.spec.js\" \"./server/**/*.spec.js\""
   },
   "repository": {
     "type": "git",

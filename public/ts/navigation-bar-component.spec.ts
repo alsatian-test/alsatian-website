@@ -7,6 +7,6 @@ export default class NavigationBarComponentTests {
     public menuNotOpenByDefault() {
         const navigationBar = new NavigationBarComponent();
 
-        Expect(navigationBar.state.isOpen).toBe(false);
+        Expect(navigationBar.state.isMenuOpen).toBe(false);
     }
 }
