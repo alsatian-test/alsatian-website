@@ -1,7 +1,7 @@
 import { Test, Expect, TestFixture } from "alsatian";
 import NavigationBarComponent from "./navigation-bar-component";
 
-@TestFixture("Navigation Bar Component Tests")
+// @TestFixture("Navigation Bar Component Tests")
 export default class NavigationBarComponentTests {
     @Test("Menu is not open by default")
     public menuNotOpenByDefault() {
