@@ -10,14 +10,14 @@ export default class InstructionStepComponent extends React.Component<any, any> 
 
    private _transparent = true;
    private _something: HTMLElement;
-   
+
    public componentDidMount() {
-      addEventListener('DOMContentLoaded', this._checkIsVisible.bind(this), false);
-      addEventListener('load', this._checkIsVisible.bind(this), false);
-      addEventListener('scroll', this._checkIsVisible.bind(this), false);
-      addEventListener('resize', this._checkIsVisible.bind(this), false);
+      addEventListener("DOMContentLoaded", this._checkIsVisible.bind(this), false);
+      addEventListener("load", this._checkIsVisible.bind(this), false);
+      addEventListener("scroll", this._checkIsVisible.bind(this), false);
+      addEventListener("resize", this._checkIsVisible.bind(this), false);
    }
-   
+
    private _checkIsVisible(event: Event) {
     if (!this.state._transparent) {
       return;
@@ -35,8 +35,6 @@ export default class InstructionStepComponent extends React.Component<any, any> 
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     ) {
       this.setState({ _transparent: false});
-
-      //this._filterSkills();
     }
   }
 

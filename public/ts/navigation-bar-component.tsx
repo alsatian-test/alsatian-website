@@ -10,7 +10,7 @@ export default class NavigationBarComponent extends React.Component<any, any> {
       super();
       this.state = {
          isMenuOpen: false
-      }
+      };
    }
 
    render() {

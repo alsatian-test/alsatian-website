@@ -24,7 +24,7 @@ export default class AppRouter extends React.Component<any, any> {
                   </Route>
                   <Route path="*" component={NotFoundPageComponent} />
                </Route>
-            </Router>
+            </Router>;
    }
 }
 
