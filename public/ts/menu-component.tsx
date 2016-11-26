@@ -10,7 +10,7 @@ export default class MenuComponent extends React.Component<any, any> {
    }
 
    render() {
-      return   <nav className={ this.props.open ? "navigation-menu open": "navigation-menu"}>
+      return   <nav className={ this.props.open ? "navigation-menu open" : "navigation-menu" }>
                   <ul className="menu-items">
                      <li className="menu-item">
                         <Link to="/tutorials/get-started">

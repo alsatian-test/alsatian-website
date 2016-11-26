@@ -10,7 +10,7 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
    }
 
    public static get defaultProps() {
-      return { title: "Quick Start" }
+      return { title: "Quick Start" };
    }
 
    render() {
