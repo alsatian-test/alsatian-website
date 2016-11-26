@@ -9,10 +9,12 @@
     "build-typescript": "tsc",
     "dev": "npm-run-all --parallel start expose-to-networked-devices",
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
-    "review": "tslint \"**/*.ts\" --exclude \"**/*.d.ts\" --exclude \"node_modules/**/*.ts\"",
+    "review": "npm run review-typescript",
+    "review-typescript": "tslint \"**/*.ts\" --exclude \"**/*.d.ts\" --exclude \"node_modules/**/*.ts\"",
     "start": "node ./index.js",
     "pretest": "npm run build",
-    "test": "alsatian \"./public/**/*.spec.js\" \"./server/**/*.spec.js\""
+    "test": "npm run review && npm run unit-tests",
+    "unit-tests": "alsatian \"./public/**/*.spec.js\" \"./server/**/*.spec.js\""
   },
   "repository": {
     "type": "git",
