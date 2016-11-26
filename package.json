@@ -10,7 +10,7 @@
     "dev": "npm-run-all --parallel start expose-to-networked-devices",
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
     "review": "npm run review-typescript",
-    "review-typescript": "tslint \"**/*.ts\" --exclude \"**/*.d.ts\" --exclude \"node_modules/**/*.ts\"",
+    "review-typescript": "tslint \"**/*.ts\" \"**/*.tsx\" --exclude \"**/*.d.ts\" --exclude \"node_modules/**/*.*\"",
     "start": "node ./index.js",
     "pretest": "npm run build",
     "test": "npm run review && npm run unit-tests",
