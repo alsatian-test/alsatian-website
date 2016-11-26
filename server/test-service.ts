@@ -20,7 +20,7 @@ export default class TestService {
       (testRunnner.run(testSet) as any).then((results: Array<any>) => {
         console.log(results);
         response.send(results);
-      })
+      });
       // build fake test set
 
       // run fake test set
