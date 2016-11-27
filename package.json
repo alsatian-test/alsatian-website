@@ -11,7 +11,8 @@
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
     "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-sass": "onchange public/**/*.scss -- npm run build-sass"
+    "watch-sass": "onchange public/**/*.scss -- npm run build-sass",
+    "watch-typescript": "onchange public/**/*.ts public/**/*.tsx -e **/*.d.ts -- npm run build-typescript"
   },
   "repository": {
     "type": "git",
