@@ -12,8 +12,8 @@
     "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-run-all --parallel watch-sass watch-typescript",
-    "watch-sass": "onchange public/**/*.scss -- npm run build-sass",
-    "watch-typescript": "onchange public/**/*.ts public/**/*.tsx -e **/*.d.ts -- npm run build-typescript"
+    "watch-sass": "onchange **/*.scss -e node_modules/**/*.* -- npm run build-sass",
+    "watch-typescript": "onchange **/*.ts **/*.tsx -e **/*.d.ts  -e node_modules/**/*.* -- npm run build-typescript"
   },
   "repository": {
     "type": "git",
