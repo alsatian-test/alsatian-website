@@ -9,8 +9,13 @@
     "build-typescript": "tsc",
     "dev": "npm-run-all --parallel start expose-to-networked-devices watch",
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
-    "start": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "review": "npm run review-typescript & npm run review-sass",
+    "review-typescript": "tslint \"**/*.ts\" \"**/*.tsx\" --exclude \"**/*.d.ts\" --exclude \"node_modules/**/*.*\"",
+    "review-sass": "sass-lint \"**/*.scss\" --ignore \"node_modules/**/*.*\"",
+    "start": "node ./index.js",    
+    "pretest": "npm run build",
+    "test": "npm run review && npm run unit-tests",
+    "unit-tests": "alsatian \"./public/**/*.spec.js\" \"./server/**/*.spec.js\"",
     "watch": "npm-run-all --parallel watch-sass watch-typescript",
     "watch-sass": "onchange **/*.scss -e node_modules/**/*.* -- npm run build-sass",
     "watch-typescript": "onchange **/*.ts **/*.tsx -e **/*.d.ts  -e node_modules/**/*.* -- npm run build-typescript"
@@ -53,6 +58,8 @@
     "node-sass": "^3.10.1",
     "npm-run-all": "^3.1.1",
     "onchange": "^3.0.2",
-    "susy": "^2.2.12"
+    "sass-lint": "^1.10.2",
+    "susy": "^2.2.12",
+    "tslint": "^4.0.2"
   }
 }

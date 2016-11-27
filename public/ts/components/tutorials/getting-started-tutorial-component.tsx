@@ -8,7 +8,7 @@ export default class GetStartedTutorialComponent extends React.Component<any, an
    }
 
    public static get defaultProps() {
-      return { title: "Get Started" }
+      return { title: "Get Started" };
    }
 
    render() {
