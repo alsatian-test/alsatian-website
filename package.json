@@ -7,7 +7,7 @@
     "build": "npm run build-typescript && npm run build-sass",
     "build-sass": "node-sass --include-path scss public/sass/styles.scss public/css/styles.css",
     "build-typescript": "tsc",
-    "dev": "npm-run-all --parallel start expose-to-networked-devices",
+    "dev": "npm-run-all --parallel start expose-to-networked-devices watch",
     "expose-to-networked-devices": "browser-sync start --proxy localhost:2900 --files \"css/*.css\"",
     "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
