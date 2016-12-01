@@ -106,6 +106,27 @@ button {
       padding: 12px;
       box-sizing: border-box;
 
+      &.smart, &.loyal {
+          .reason-icon {
+              background: #F45D8B;            
+              border-color: #F10049;
+          }
+      }
+
+      &.fast, &.helpful {
+          .reason-icon {
+              background: #FFBE61;
+              border-color: #FF9500;
+          }
+      }
+
+      &.robust, &.playful {
+          .reason-icon {
+              background: #5DA0DC;
+              border-color: #0F75D0;
+          }
+      }
+
       @include breakpoint($tablet-width) {
          @include span(4 of 12);
       }
