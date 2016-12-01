@@ -28,9 +28,9 @@ export default class MenuComponent extends React.Component<any, any> {
                         </Link>
                      </li>
                      <li className="menu-item">
-                        <Link to="/documentation">
+                        <a href="https://github.com/alsatian-test/alsatian#readme">
                            <div>Documentation</div>
-                        </Link>
+                        </a>
                      </li>
                      <li className="menu-item">
                         <Link to="/about">
