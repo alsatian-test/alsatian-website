@@ -91,6 +91,11 @@ button {
    font-size: 1.5em;
    padding: 0.25em 0.5em;
    margin: 0.25em 0.5em;
+
+   &:hover {
+      cursor: pointer;
+      background-color: #55DFAB;
+   }
 }
 
 .center-contents {
@@ -154,11 +159,6 @@ button {
           }
       }
    }
-}
-
-button:hover {
-   cursor: pointer;
-   background-color: rgb(100, 212, 132);
 }
 
 .container {
