@@ -25,9 +25,6 @@ export default class HomePageComponent extends React.Component<any, any> {
                         <Link to="/tutorials/get-started">
                            <button type="button">Get started</button>
                         </Link>
-                        <Link to="/changelog">
-                           <button type="button">v 1.0.0-beta-10</button>
-                        </Link>
                      </div>
                   </div>
                </section>
