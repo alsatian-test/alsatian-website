@@ -93,6 +93,10 @@ button {
    margin: 0.25em 0.5em;
 }
 
+.center-contents {
+    text-align: center;
+}
+
 #reasons-to-use {
    @include container;
 
