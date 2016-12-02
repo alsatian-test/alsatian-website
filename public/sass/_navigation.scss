@@ -50,7 +50,11 @@
             font-size: 1.25em;
             border: solid 1px white;
             border-width: 1px 0;
-            background: rgb(136, 219, 188);
+            background: $primary-color;
+
+            &:hover, &:focus, &:active {
+                background: $primary-color-light
+            }
          }
       }
    }
