@@ -18,4 +18,10 @@ pre {
          }
       }
    }
+
+   &.language-shell {
+       padding: 24px 32px;
+       background: #333;
+       color: #eee;
+   }
 }

@@ -24,11 +24,11 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                   <ol id="quick-start-steps">
                      <InstructionStepComponent title="Install Alsatian">
                         <p>Good news, Alsatian is on NPM! So this step is super easy! Simply put the below into you're favourite CLI.</p>
-                        <pre><code className="powershell">npm install alsatian --save-dev</code></pre>
+                        <CodeBlock language="shell">npm install alsatian --save-dev</CodeBlock>
                      </InstructionStepComponent>
                      <InstructionStepComponent title="Write your first test">
                         <p>Simply create a spec file paste this code and save it.</p>
-                        <CodeBlock>
+                        <CodeBlock language="typescript" showLineNumber>
                            {
                           `import { Test, Expect } from "alsatian";
                            import * as Alsatian from "alsatian";
@@ -44,9 +44,9 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                      </InstructionStepComponent>
                      <InstructionStepComponent title="Run your first test">
                         <p>Add the following test script to your package.json</p>
-                        <pre>alsatian "wherever/you/saved/the/test.js"</pre>
+                        <CodeBlock language="shell">alsatian "wherever/you/saved/the/test.js"</CodeBlock>
                         <p>Alternatively you can run Alsatian through the CLI, but don't forget to install it globally first!</p>
-                        <pre>npm install alsatian -g</pre>
+                        <CodeBlock language="shell">npm install alsatian -g</CodeBlock>
                      </InstructionStepComponent>
                      <InstructionStepComponent title="Celebrate">
                         <p>Many congrats, now you can head on over to the tutorial</p>
