@@ -11,12 +11,11 @@ export default class ExampleEndToEndTests {
             build();
         
         return new Promise((resolve, reject) => {
-            driver.get("https://www.google.com").then(() => {
-                // const headingTitle = driver.findElement(By.css("nav h1"));
-                const headingTitle = driver.findElement(By.css(".logo-subtext"));
+            driver.get("localhost:3000").then(() => {
+                const headingTitle = driver.findElement(By.css("nav h1"));
 
                 headingTitle.getText().then(headingText => {
-                    Expect(headingText).toBe("UK");
+                    Expect(headingText).toBe("Alsatian");
                 });
 
                 resolve();

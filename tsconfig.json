@@ -21,11 +21,12 @@
         "./typings/globals/**/*.d.ts",
         "./node_modules/**/*.*"
     ],
-    "filesGlob": [
+    "include": [
         "./public/**/*.tsx",
         "./public/**/*.ts",
         "./server/**/*.tsx",
-        "./server/**/*.ts"
+        "./server/**/*.ts",
+        "./test/**/*.ts"
     ],
     "atom": {
         "rewriteTsconfig": false
