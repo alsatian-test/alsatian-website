@@ -15,12 +15,13 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
 
    render() {
       return   <div>
-                  <p>Below we've made some assumptions that you have Node.js and TypeScript installed and are familiar with creating projects for them. If you've not then you'll probably need a bit more help but fear not, help is at hand!</p>  
+                  <p>Below we've made some assumptions that you have Node.js and TypeScript installed and are familiar with creating projects for them.{/* If you've not then you'll probably need a bit more help but fear not, help is at hand!*/}</p>  
+                  {/* TODO: Build out full getting started
                   <div className="center-contents">
                         <Link to="/tutorials/get-started">
                               <button id="no-assumptions-button" type="button">Make no assumptions</button>
                         </Link>
-                  </div>
+                  </div>*/}
                   <ol id="quick-start-steps">
                      <InstructionStepComponent title="Install Alsatian">
                         <p>Good news, Alsatian is on NPM! So this step is super easy! Simply put the below into you're favourite CLI.</p>
@@ -49,14 +50,15 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                         <CodeBlock language="shell">npm install alsatian -g</CodeBlock>
                      </InstructionStepComponent>
                      <InstructionStepComponent title="Celebrate">
-                        <p>Many congrats, now you can head on over to the tutorial</p>
+                        <p>Many congrats, now you can write some great tests for your awesome code!{/* head on over to the TDD tutorial*/}</p>
                      </InstructionStepComponent>
                   </ol>
+                  { /* TODO: Create TDD Tutorial *
                   <div className="center-contents">
                         <Link to="/tutorials/tdd">
                         <button id="continue-journey-button" type="button">Continue your journey</button>
                         </Link>
-                  </div>
+                  </div>*/}
                </div>;
       }
 }

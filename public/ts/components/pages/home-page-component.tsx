@@ -22,9 +22,10 @@ export default class HomePageComponent extends React.Component<any, any> {
                      <div className="main-info">
                         <img id="alsatian-logo" src="/images/alsatian-logo.png" />
                         <p>Alsatian helps you test atomically</p>
+                        {/* TODO: Build full getting started tutorial
                         <Link to="/tutorials/get-started">
                            <button type="button">Get started</button>
-                        </Link>
+                        </Link>*/}
                      </div>
                   </div>
                </section>
