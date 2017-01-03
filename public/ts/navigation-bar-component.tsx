@@ -29,11 +29,11 @@ export default class NavigationBarComponent extends React.Component<any, any> {
                   <button id="menu-button" onClick={this.toggleMenu.bind(this)}>
                     <svg width="38" height="38" viewBox="0 0 38 38">
                         <style>
-                            { "path { stroke: white; stroke-width: 4px }" }
+                            { "path { stroke: white; stroke-width: 6px }" }
                         </style>
-                        <path d="M10.5 10l17 0"/>
-                        <path d="M10.5 19l17 0"/>
-                        <path d="M10.5 28l17 0"/>
+                        <path d="M0 3l38 0"/>
+                        <path d="M0 18l38 0"/>
+                        <path d="M0 32l38 0"/>
                     </svg>
                   </button>
                   <MenuComponent open={this.state.isMenuOpen}></MenuComponent>
