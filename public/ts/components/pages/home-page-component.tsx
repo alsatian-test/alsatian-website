@@ -22,6 +22,35 @@ export default class HomePageComponent extends React.Component<any, any> {
                      <div className="main-info">
                         <img id="alsatian-logo" src="/images/alsatian-logo.png" />
                         <p>Alsatian helps you test atomically</p>
+                        <p id="badges">
+                          <a href="https://www.npmjs.com/package/alsatian">
+                              <img src="https://img.shields.io/npm/v/alsatian.svg" alt="NPM Version" />
+                          </a>
+                          <a href="https://www.github.com/alsatian-test/alsatian/blob/master/LICENSE">
+                              <img src="https://img.shields.io/github/license/alsatian-test/alsatian.svg" alt="License" />
+                          </a>
+                          <a href="https://travis-ci.org/alsatian-test/alsatian">
+                              <img src="https://travis-ci.org/alsatian-test/alsatian.svg?branch=master" alt="Build Status" />
+                          </a>
+                          <a href="https://codeclimate.com/github/alsatian-test/alsatian">
+                              <img src="https://codeclimate.com/github/alsatian-test/alsatian/badges/gpa.svg" alt="Code Climate" />
+                          </a>
+                          <a href="https://coveralls.io/github/alsatian-test/alsatian?branch=master">
+                              <img src="https://coveralls.io/repos/github/alsatian-test/alsatian/badge.svg?branch=master" alt="Coverage Status" />
+                          </a>
+                          <a href="https://codeclimate.com/github/alsatian-test/alsatian">
+                              <img src="https://codeclimate.com/github/alsatian-test/alsatian/badges/issue_count.svg" alt="Code Climate Issue Count" />
+                          </a>
+                          <a href="https://www.bithound.io/github/alsatian-test/alsatian">
+                              <img src="https://www.bithound.io/github/alsatian-test/alsatian/badges/code.svg" alt="bitHound Code Rating" />
+                          </a>
+                          <a href="https://www.bithound.io/github/alsatian-test/alsatian/master/dependencies/npm">
+                              <img src="https://www.bithound.io/github/alsatian-test/alsatian/badges/dependencies.svg" alt="bitHound Dependencies Rating" />
+                          </a>
+                          <a href="https://snyk.io/test/github/alsatian-test/alsatian">
+                              <img src="https://snyk.io/test/github/alsatian-test/alsatian/badge.svg" alt="Known Vulnerabilities" />
+                          </a>
+                      </p>
                         {/* TODO: Build full getting started tutorial
                         <Link to="/tutorials/get-started">
                            <button type="button">Get started</button>
