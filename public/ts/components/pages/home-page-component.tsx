@@ -39,42 +39,42 @@ export default class HomePageComponent extends React.Component<any, any> {
                               <img src="/images/brain.svg"/>
                            </div>
                            <h3>Smart</h3>
-                           <p>Test Case decorator, some stuff about functional cocverage, quick to write some bad ass tests. Not to mention it runs dead fast.</p>
+                           <p>Brainy syntax allows you to write great tests, effectively without loads of bloat.</p>
                         </div>
                         <div className="reason-to-use fast">
                            <div className="reason-icon">
                               <img src="/images/lightning-bolt.svg"/>
                            </div>
                            <h3>Fast</h3>
-                           <p>Test Case decorator, some stuff about functional cocverage, quick to write some bad ass tests. Not to mention it runs dead fast.</p>
+                           <p>Tests are fast to write and run.</p>
                         </div>
                         <div className="reason-to-use robust">
                            <div className="reason-icon">
                               <img src="/images/boxing-glove.svg"/>
                            </div>
                            <h3>Robust</h3>
-                           <p>Literally thousands of tests, CI process etc. Active on GitHub things get done son</p>
+                           <p>Thousands of tests and a strong CI process ensure it's always in good health.</p>
                         </div>
                         <div className="reason-to-use helpful">
                            <div className="reason-icon">
                               <img src="/images/ladder.svg"/>
                            </div>
                            <h3>Helpful</h3>
-                           <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc. Supported by easy to read docs</p>
+                           <p>Intuitive with good supporting documentation and intellisense.</p>
                         </div>
                         <div className="reason-to-use playful">
                            <div className="reason-icon">
                               <img src="/images/rollerskate.svg"/>
                            </div>
                            <h3>Playful</h3>
-                           <p>Get stuck into TDD, Alsatian makes it less of a drag and helps you with messages you can understand to help you fix stuff, type safety etc. Supported by easy to read docs</p>
+                           <p>Explore and write tests how you want to write them!</p>
                         </div>
                         <div className="reason-to-use loyal">
                            <div className="reason-icon">
                               <img src="/images/heart.svg"/>
                            </div>
                            <h3>Loyal</h3>
-                           <p>Literally thousands of tests, CI process etc. Active on GitHub things get done son</p>
+                           <p>Active contributors on GitHub willing to help you reach testing Nirvana.</p>
                         </div>
                      </div>
                   </section>

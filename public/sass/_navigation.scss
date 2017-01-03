@@ -12,9 +12,14 @@
    }
 
    .icon-link {
+      display: none;
       margin: 0.5em;
       top: 0.5em;
       position: relative;
+
+      @include breakpoint($large-phone-width) {
+         display: inline-block;
+      }
 
       > img {
          height: 2em;
