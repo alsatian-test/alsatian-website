@@ -21,7 +21,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                      </div>
                      <div className="main-info">
                         <img id="alsatian-logo" src="/images/alsatian-logo.png" />
-                        <p>Alsatian helps you test atomically</p>
+                        <p>Alsatian helps you test awesomely</p>
                         <div id="badges">
                           <a href="https://www.npmjs.com/package/alsatian">
                               <img src="https://img.shields.io/npm/v/alsatian.svg" alt="NPM Version" />
