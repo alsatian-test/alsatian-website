@@ -22,7 +22,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                      <div className="main-info">
                         <img id="alsatian-logo" src="/images/alsatian-logo.png" />
                         <p>Alsatian helps you test atomically</p>
-                        <p id="badges">
+                        <div id="badges">
                           <a href="https://www.npmjs.com/package/alsatian">
                               <img src="https://img.shields.io/npm/v/alsatian.svg" alt="NPM Version" />
                           </a>
@@ -50,7 +50,7 @@ export default class HomePageComponent extends React.Component<any, any> {
                           <a href="https://snyk.io/test/github/alsatian-test/alsatian">
                               <img src="https://snyk.io/test/github/alsatian-test/alsatian/badge.svg" alt="Known Vulnerabilities" />
                           </a>
-                      </p>
+                      </div>
                         {/* TODO: Build full getting started tutorial
                         <Link to="/tutorials/get-started">
                            <button type="button">Get started</button>
