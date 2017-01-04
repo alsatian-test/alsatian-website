@@ -116,22 +116,22 @@ button {
 
       &.smart, &.loyal {
           .reason-icon {
-              background: #F45D8B;            
-              border-color: #F10049;
+              background: rgb(252, 211, 224);            
+              border-color: rgb(250, 159, 187);
           }
       }
 
       &.fast, &.helpful {
           .reason-icon {
-              background: #FFBE61;
-              border-color: #FF9500;
+              background: rgb(255, 239, 216);
+              border-color: rgb(255, 217, 163);
           }
       }
 
       &.robust, &.playful {
           .reason-icon {
-              background: #5DA0DC;
-              border-color: #0F75D0;
+              background: rgb(219, 234, 247);
+              border-color: rgb(182, 213, 241);
           }
       }
 
