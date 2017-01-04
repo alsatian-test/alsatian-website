@@ -27,7 +27,7 @@ export default class NavigationBarComponent extends React.Component<any, any> {
                      </a>
                   </div>
                   <button id="menu-button" onClick={this.toggleMenu.bind(this)}>
-                    <svg width="38" height="38" viewBox="0 0 38 38">
+                    <svg viewBox="0 0 38 38">
                         <style>
                             { "path { stroke: white; stroke-width: 6px }" }
                         </style>
