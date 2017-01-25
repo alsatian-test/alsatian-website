@@ -29,7 +29,7 @@ export default class MenuComponent extends React.Component<any, any> {
                         </Link>
                      </li>*/}
                      <li className="menu-item">
-                        <a href="https://github.com/alsatian-test/alsatian#readme">
+                        <a href="https://github.com/alsatian-test/alsatian/wiki">
                            <div>Documentation</div>
                         </a>
                      </li>
