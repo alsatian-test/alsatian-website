@@ -15,8 +15,8 @@ export default class AboutPageComponent extends React.Component<any, any> {
                      </div>
                   </section>
                   <section className="container">
-                     <h2>What is Alsatian</h2>
-                     <p>Something about next gen stuff</p>
+                     <h2>What is Alsatian?</h2>
+                     <p>Alsatian is a test framework committed to making testing awesome! With excellent readability and features to make your tests the best!</p>
                      <h2>Acknowledgements</h2>
                      <p>Alsatian is free and open source and couldn't survive without the wonderful people who provide freebees for the Open Source community! We use the following services and are proud to:</p>
                      <ul>
