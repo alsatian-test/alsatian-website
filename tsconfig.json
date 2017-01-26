@@ -9,6 +9,7 @@
         "preserveConstEnums": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
+        "lib": [ "es5", "es2015.promise" ],
         "jsx": "react"
     },
     "buildOnSave": true,
