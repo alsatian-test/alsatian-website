@@ -1,0 +1,31 @@
+pre {
+
+   overflow-x: auto;
+
+   code.language-typescript {
+
+      .token {
+         &.keyword {
+            color: blue;
+         }
+
+         &.class-name {
+             color: rgb(38, 127, 153);
+         }
+
+         &.function {
+            color: rgb(121, 94, 38);
+         }
+
+         &.string {
+            color: rgb(163, 21, 21);
+         }
+      }
+   }
+
+   &.language-shell {
+       padding: 24px 32px;
+       background: #333;
+       color: #eee;
+   }
+}

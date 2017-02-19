@@ -1,0 +1,171 @@
+body {
+   margin: 0;
+   margin-top: 68px;
+   font-family: sans-serif;
+   background: white;
+   font-size: 20px;
+}
+
+.billboard h1 {
+   font-size: 5em;
+}
+
+h2 {
+   font-size: 2em;
+}
+
+h3 {
+   font-size: 1.5em
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: $font-bold;
+}
+
+#quick-start-steps {
+   padding: 0;
+   list-style-type: none;
+
+   li {
+      counter-increment: step-counter;
+
+      &::before {
+         content: counter(step-counter);
+         background: $primary-color;
+         float: left;
+         position: relative;
+         font-size: 1.5em;
+         font-weight: bold;
+         color: white;
+         border-radius: 50%;
+         width: 1.25em;
+         padding: 0.25em;
+         text-align: center;
+         margin: 0.25em 0.5em;
+         margin-left: 0;
+         left: 0;
+         transition: left 0.6s ease, transform 0.6s ease;
+         transform: rotate(0deg);
+      }
+
+      &[data-transparent='true']{
+      
+        &::before {
+            left: -2em;
+            transform: rotate(-360deg);
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0.5em;
+            opacity: 0;
+        }
+
+        hr {
+         max-width: 0;
+        }
+      }
+
+      h3 {
+         margin: 0;
+         padding: 0.5em;
+         opacity: 1;
+         transition: opacity 0.6s ease;
+      }
+
+      hr {
+          border: solid 1px $primary-color;
+         margin: 0;
+         max-width: 100%;
+         transition: max-width 0.6s ease;
+      }
+   }
+}
+
+button {
+   background-color: $primary-color;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   font-size: 1.5em;
+   padding: 0.25em 0.5em;
+   margin: 0.25em 0.5em;
+   outline: none;
+
+   &:hover {
+      cursor: pointer;
+      background-color: $primary-color-light;
+   }
+}
+
+.center-contents {
+    text-align: center;
+}
+
+#reasons-to-use {
+   @include container;
+
+   .reason-to-use {
+      @include span(12 of 12);
+      text-align: center;
+      padding: 12px;
+      box-sizing: border-box;
+      height: 350px;
+
+      &.smart, &.loyal {
+          .reason-icon {
+              background: rgb(252, 211, 224);            
+              border-color: rgb(250, 159, 187);
+          }
+      }
+
+      &.fast, &.helpful {
+          .reason-icon {
+              background: rgb(255, 239, 216);
+              border-color: rgb(255, 217, 163);
+          }
+      }
+
+      &.robust, &.playful {
+          .reason-icon {
+              background: rgb(219, 234, 247);
+              border-color: rgb(182, 213, 241);
+          }
+      }
+
+      @include breakpoint($tablet-width) {
+         @include span(4 of 12);
+      }
+
+      &:nth-child(3n) {
+         @include last;
+      }
+
+      .reason-icon {
+
+          display: inline-block;
+          border-radius: 50%;
+          background: #eee;
+          width: 96px;
+          height: 96px;
+          overflow: visible;
+          position: relative;
+          border: 6px solid #aaa;
+
+          img {
+              width: 116px;
+              position: absolute;
+              top: -12px;
+              left: -12px;
+          }
+      }
+   }
+}
+
+.container {
+   padding: 0 1em;
+   max-width: $page-container-width;
+   margin: 0 auto;
+}
