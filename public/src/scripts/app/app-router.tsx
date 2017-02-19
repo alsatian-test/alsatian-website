@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import AppComponent from "./app-component";
 import HomePageComponent from "./components/pages/home-page-component";
@@ -29,8 +28,3 @@ export default class AppRouter extends React.Component<any, any> {
             </Router>;
    }
 }
-
-ReactDOM.render(
-   <AppRouter />,
-   document.getElementById("app")
-);
