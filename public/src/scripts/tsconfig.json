@@ -9,7 +9,9 @@
       "preserveConstEnums": true,
       "experimentalDecorators": true,
       "emitDecoratorMetadata": true,
-      "newLine": "LF"
+      "newLine": "LF",
+      "lib": [ "es5", "es2015.promise", "dom" ],
+      "jsx": "react"
    },
    "buildOnSave": false,
    "compileOnSave": true,

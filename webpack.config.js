@@ -6,7 +6,7 @@ module.exports = [
   {
     name: "app",
     entry: {
-      "app-startup": "./public/src/scripts/app/startup.ts",
+      "app-startup": "./public/src/scripts/app/startup.tsx",
       "legacy-app-loading": "./public/src/scripts/app-loading/legacy-app-loading.ts"
     },
     output: {
