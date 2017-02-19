@@ -9,6 +9,7 @@
         "preserveConstEnums": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
+        "lib": [ "es5", "es2015.promise", "dom" ],
         "jsx": "react"
     },
     "buildOnSave": true,
@@ -21,11 +22,12 @@
         "./typings/globals/**/*.d.ts",
         "./node_modules/**/*.*"
     ],
-    "filesGlob": [
+    "include": [
         "./public/**/*.tsx",
         "./public/**/*.ts",
         "./server/**/*.tsx",
-        "./server/**/*.ts"
+        "./server/**/*.ts",
+        "./test/**/*.ts"
     ],
     "atom": {
         "rewriteTsconfig": false

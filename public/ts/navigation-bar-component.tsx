@@ -26,7 +26,16 @@ export default class NavigationBarComponent extends React.Component<any, any> {
                         <img src="/images/npm-logo.svg"/>
                      </a>
                   </div>
-                  <button id="menu-button" onClick={this.toggleMenu.bind(this)}>Menu</button>
+                  <button id="menu-button" onClick={this.toggleMenu.bind(this)}>
+                    <svg viewBox="0 0 38 38">
+                        <style>
+                            { "path { stroke: white; stroke-width: 6px }" }
+                        </style>
+                        <path d="M0 3l38 0"/>
+                        <path d="M0 18l38 0"/>
+                        <path d="M0 32l38 0"/>
+                    </svg>
+                  </button>
                   <MenuComponent open={this.state.isMenuOpen}></MenuComponent>
                </nav>;
    }
