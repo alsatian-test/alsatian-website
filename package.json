@@ -21,7 +21,7 @@
     "review-typescript": "tslint \"**/*.ts\" \"**/*.tsx\" --exclude \"**/*.d.ts\" --exclude \"node_modules/**/*.*\"",
     "review-sass": "sass-lint \"**/*.scss\" --ignore \"node_modules/**/*.*\"",
     "pretest": "npm run build-unit-tests",
-    "test": "npm run review && npm run unit-tests && npm run end-to-end-tests",
+    "test": "npm run review && npm run unit-tests",
     "build-unit-tests": "tsc -p ./test/unit-tests",
     "end-to-end-tests": "alsatian \"./test/end-to-end/**/*.spec.js\" -t 10000",
     "unit-tests": "alsatian \"./test/unit-tests/**/*.spec.js\"",
