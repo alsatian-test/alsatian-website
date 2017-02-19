@@ -1,6 +1,6 @@
 #NPM
 node_modules
-npm-debug.log
+npm-debug.log*
 
 #TypeScript
 *.js
@@ -14,3 +14,6 @@ typings
 #Test
 coverage
 .nyc_output
+
+#Selenium
+debug.log
