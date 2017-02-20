@@ -29,7 +29,7 @@ export default class QuickStartTutorialComponent extends React.Component<any, an
                      </InstructionStepComponent>
                      <InstructionStepComponent title="Write your first test">
                         <p>Simply create a spec file paste this code and save it.</p>
-                        <CodeBlock language="typescript" showLineNumber>
+                        <CodeBlock language="typescript" showLineNumbers>
                            {
                           `import { Test, Expect } from "alsatian";
                            import * as Alsatian from "alsatian";
