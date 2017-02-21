@@ -1,6 +1,8 @@
 import * as React from "react";
 import "prismjs";
 import "../../../../../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers";
+import "../../../../../../node_modules/prismjs/components/prism-typescript";
+import "../../../../../../node_modules/prismjs/components/prism-powershell";
 
 export default class CodeBlock extends React.Component<any, any> {
 
@@ -20,7 +22,7 @@ export default class CodeBlock extends React.Component<any, any> {
    }
 
    private _buildContent(): any {
-      return { __html: Prism.highlight(this.state.code, (Prism.languages as any)["javascript"])};
+      return { __html: Prism.highlight(this.state.code, (Prism.languages as any)[this.props.language])};
    }
 
    render() {
