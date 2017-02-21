@@ -1,6 +1,6 @@
 import * as React from "react";
 import "prismjs";
-// import "prismjs.line-numbers";
+import "../../../../../../node_modules/prismjs/plugins/line-numbers/prism-line-numbers";
 
 export default class CodeBlock extends React.Component<any, any> {
 
