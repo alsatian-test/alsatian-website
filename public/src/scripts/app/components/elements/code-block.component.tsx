@@ -13,6 +13,15 @@ export default class CodeBlock extends React.Component<any, any> {
     };
    }
 
+   private _codeElement: any;
+
+   public componentDidMount() {
+       Prism.hooks.run("complete", {
+           code: this.state.code,
+           element: this._codeElement
+       });
+   }
+
    private get _preClassName() {
        return this.props.showLineNumbers ? "line-numbers " : "" + this._languageClassName;
    }
@@ -27,7 +36,8 @@ export default class CodeBlock extends React.Component<any, any> {
 
    render() {
       return <pre className={this._preClassName}>
-                <code className={this._languageClassName}
+                <code ref={(codeElement) => this._codeElement = codeElement }
+                      className={this._languageClassName}
                       dangerouslySetInnerHTML={this._buildContent()}></code>
              </pre>;
    }
