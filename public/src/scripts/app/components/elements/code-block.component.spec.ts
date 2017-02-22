@@ -72,7 +72,7 @@ export class CodeBlockTests {
 
         SpyOn(Prism.hooks, "run");
 
-        codeBlock.render();
+        codeBlock.render().props.children.ref({});
 
         codeBlock.componentDidMount();
 
