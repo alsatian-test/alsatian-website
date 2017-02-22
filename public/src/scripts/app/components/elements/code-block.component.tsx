@@ -17,10 +17,12 @@ export default class CodeBlock extends React.Component<any, any> {
     private _codeElement: HTMLElement;
 
     public componentDidMount() {
-        Prism.hooks.run("complete", {
-            code: this.state.code,
-            element: this._codeElement
-        });
+        if (this._codeElement) {
+            Prism.hooks.run("complete", {
+                code: this.state.code,
+                element: this._codeElement
+            });
+        }
     }
 
     private get _preClassName() {

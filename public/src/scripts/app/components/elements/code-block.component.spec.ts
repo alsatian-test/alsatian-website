@@ -1,5 +1,6 @@
-import { Expect, Test, TestCase, TestFixture } from "alsatian";
+import { Expect, SpyOn, Test, TestCase, TestFixture } from "alsatian";
 import CodeBlock from "./code-block.component";
+import "prismjs";
 
 @TestFixture("code block tests")
 export class CodeBlockTests {
@@ -38,7 +39,7 @@ export class CodeBlockTests {
     }
 
     @Test("line numbers class added")
-    public lineNumbersClassAdded(shoul: string) {
+    public lineNumbersClassAdded() {
         const codeBlock = new CodeBlock({ 
             children: "",
             language: "typescript",
@@ -46,5 +47,35 @@ export class CodeBlockTests {
         });
 
         Expect(codeBlock.render().props.className).toBe("line-numbers language-typescript");
+    }
+
+    @Test("prism complete callback not called before render")
+    public prismCallbackNotCalledBeforeRender() {
+        const codeBlock = new CodeBlock({ 
+            children: "",
+            language: "typescript"
+        });
+
+        SpyOn(Prism.hooks, "run");
+
+        codeBlock.componentDidMount();
+
+        Expect(Prism.hooks.run).not.toHaveBeenCalled();
+    }
+
+    @Test("prism complete callback is called after render")
+    public prismCallbackCalledAfterRender() {
+        const codeBlock = new CodeBlock({ 
+            children: "",
+            language: "typescript"
+        });
+
+        SpyOn(Prism.hooks, "run");
+
+        codeBlock.render();
+
+        codeBlock.componentDidMount();
+
+        Expect(Prism.hooks.run).toHaveBeenCalled();
     }
 }
