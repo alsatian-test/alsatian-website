@@ -6,39 +6,40 @@ import "../../../../../../node_modules/prismjs/components/prism-powershell";
 
 export default class CodeBlock extends React.Component<any, any> {
 
-   public constructor(props: any) {
-       super(props);
-    this.state = {
-        code: this.props.children
-    };
-   }
+    public constructor(props: any) {
+        super(props);
 
-   private _codeElement: any;
+        this.state = {
+            code: this.props.children
+        };
+    }
 
-   public componentDidMount() {
-       Prism.hooks.run("complete", {
-           code: this.state.code,
-           element: this._codeElement
-       });
-   }
+    private _codeElement: HTMLElement;
 
-   private get _preClassName() {
-       return this.props.showLineNumbers ? "line-numbers " : "" + this._languageClassName;
-   }
+    public componentDidMount() {
+        Prism.hooks.run("complete", {
+            code: this.state.code,
+            element: this._codeElement
+        });
+    }
 
-   private get _languageClassName() {
-       return this.props.language ? "language-" + this.props.language : "";
-   }
+    private get _preClassName() {
+        return (this.props.showLineNumbers ? "line-numbers " : "") + this._languageClassName;
+    }
 
-   private _buildContent(): any {
-      return { __html: Prism.highlight(this.state.code, (Prism.languages as any)[this.props.language])};
-   }
+    private get _languageClassName() {
+        return this.props.language ? "language-" + this.props.language : "";
+    }
 
-   render() {
-      return <pre className={this._preClassName}>
-                <code ref={(codeElement) => this._codeElement = codeElement }
-                      className={this._languageClassName}
-                      dangerouslySetInnerHTML={this._buildContent()}></code>
-             </pre>;
-   }
+    private _buildContent(): any {
+        return { __html: Prism.highlight(this.state.code, (Prism.languages as any)[this.props.language])};
+    }
+
+    render() {
+        return  <pre className={this._preClassName}>
+                    <code ref={(codeElement) => this._codeElement = codeElement }
+                        className={this._languageClassName}
+                        dangerouslySetInnerHTML={this._buildContent()}></code>
+                </pre>;
+    }
 }
