@@ -1,4 +1,4 @@
-import { Expect, SpyOn, Test, TestCase, TestFixture } from "alsatian";
+import { Any, Expect, SpyOn, Test, TestCase, TestFixture } from "alsatian";
 import CodeBlock from "./code-block.component";
 import "prismjs";
 
@@ -76,6 +76,42 @@ export class CodeBlockTests {
 
         codeBlock.componentDidMount();
 
-        Expect(Prism.hooks.run).toHaveBeenCalled();
+        Expect(Prism.hooks.run).toHaveBeenCalledWith("complete", Any(Object));
+    }
+
+    @TestCase("some code")
+    @TestCase("much more fancy logic")
+    @Test("prism complete callback is called with code")
+    public prismCallbackCalledWithCode(code: string) {
+        const codeBlock = new CodeBlock({ 
+            children: code,
+            language: "typescript"
+        });
+
+        SpyOn(Prism.hooks, "run");
+
+        codeBlock.render().props.children.ref({});
+
+        codeBlock.componentDidMount();
+
+        Expect((Prism.hooks.run as any).calls[0].args[1].code).toBe(code);
+    }
+
+    @TestCase({ fake: "codeElement" })
+    @TestCase({ something: "much", more: "interesting" })
+    @Test("prism complete callback is called with code element")
+    public prismCallbackCalledWithCodeElement(codeElement: any) {
+        const codeBlock = new CodeBlock({ 
+            children: "",
+            language: "typescript"
+        });
+
+        SpyOn(Prism.hooks, "run");
+
+        codeBlock.render().props.children.ref(codeElement);
+
+        codeBlock.componentDidMount();
+
+        Expect((Prism.hooks.run as any).calls[0].args[1].element).toBe(codeElement);
     }
 }
