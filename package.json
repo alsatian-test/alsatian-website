@@ -22,9 +22,9 @@
     "review-sass": "sass-lint \"**/*.scss\" --ignore \"node_modules/**/*.*\"",
     "pretest": "npm run build-unit-tests",
     "test": "npm run review && npm run unit-tests",
-    "build-unit-tests": "tsc -p ./test/unit-tests",
+    "build-unit-tests": "tsc",
     "end-to-end-tests": "alsatian \"./test/end-to-end/**/*.spec.js\" -t 10000",
-    "unit-tests": "alsatian \"./test/unit-tests/**/*.spec.js\"",
+    "unit-tests": "alsatian \"./public/**/*.spec.js\"",
     "prestart": "npm run build",
     "start-web-server": "node server/startup.js",
     "start": "npm run start-web-server"
