@@ -27,7 +27,9 @@
     "unit-tests": "alsatian \"./public/**/*.spec.js\"",
     "prestart": "npm run build",
     "start-web-server": "node server/startup.js",
-    "start": "npm run start-web-server"
+    "start": "npm run start-web-server",
+    "switch-to-deploy": "git checkout -b deploy && git merge master",
+    "deploy": "npm-run-all switch-to-deploy"
   },
   "repository": {
     "type": "git",
