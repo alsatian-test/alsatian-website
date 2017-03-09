@@ -30,7 +30,7 @@
     "start": "npm run start-web-server",
     "switch-to-deploy": "git checkout -b deploy && git merge master",
     "remove-gitignore": "rimraf .gitignore",
-    "deploy": "npm-run-all switch-to-deploy"
+    "deploy": "npm-run-all switch-to-deploy build"
   },
   "repository": {
     "type": "git",
