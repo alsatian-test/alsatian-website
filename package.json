@@ -28,7 +28,7 @@
     "prestart": "npm run build",
     "start-web-server": "node server/startup.js",
     "start": "npm run start-web-server",
-    "switch-to-deploy": "git checkout -b deploy && git merge master",
+    "switch-to-deploy": "git checkout -b gh-pages && git merge master",
     "remove-gitignore": "rimraf .gitignore",
     "push-to-deploy": "git commit -am 'autodeploy' && git push",
     "deploy": "npm-run-all switch-to-deploy build push-to-deploy"
