@@ -1,6 +1,7 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const fs = require("fs");
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = [
   {
@@ -18,6 +19,11 @@ module.exports = [
       extensions: [".ts", ".tsx", ".js"] // note if using webpack 1 you"d also need a "" in the array as well
     },
     plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify('production')
+        }
+      }),
       function() {
         this.plugin("done", function(stats) {
           const cacheBustMappingPath = path.join(__dirname, "/public/dist/cache-bust-mapping/");
