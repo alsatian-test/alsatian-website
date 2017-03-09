@@ -31,7 +31,7 @@
     "switch-to-deploy": "git checkout -b gh-pages && git merge master",
     "remove-gitignore": "rimraf .gitignore",
     "push-to-deploy": "git commit -am 'autodeploy' && git push",
-    "deploy": "npm-run-all switch-to-deploy build push-to-deploy"
+    "github-deploy": "npm-run-all switch-to-deploy build push-to-deploy"
   },
   "repository": {
     "type": "git",
