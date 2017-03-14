@@ -30,11 +30,11 @@
     "start": "npm run start-web-server",
     "switch-to-deploy": "git checkout gh-pages-test && git merge master",
     "clean-for-deploy": "npm-run-all clean-configs clean-source",
-    "clean-source": "rimraf ./public ./node_modules ./scripts ./server ./test",
-    "clean-configs": "rimraf .gitignore  ./.vscode *.yml *.log *.log.* *.json webpack.config.js",
+    "clean-source": "rimraf ./public ./scripts ./server ./test",
+    "clean-configs": "rimraf .gitignore  ./.vscode *.yml *.log *.log.* webpack.config.js",
     "move-dist-to-root": "mv ./public/dist ./",
     "push-to-deploy": "git commit -am 'autodeploy' && git push origin gh-pages-test",
-    "github-deploy": "npm-run-all switch-to-deploy build clean-for-deploy push-to-deploy"
+    "github-deploy": "npm-run-all switch-to-deploy build move-dist-to-root clean-for-deploy push-to-deploy"
   },
   "repository": {
     "type": "git",
