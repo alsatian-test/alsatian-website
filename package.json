@@ -28,10 +28,13 @@
     "prestart": "npm run build",
     "start-web-server": "node server/startup.js",
     "start": "npm run start-web-server",
-    "switch-to-deploy": "git checkout -b gh-pages && git merge master",
-    "remove-gitignore": "rimraf .gitignore",
-    "push-to-deploy": "git commit -am 'autodeploy' && git push",
-    "github-deploy": "npm-run-all switch-to-deploy build push-to-deploy"
+    "switch-to-deploy": "git checkout -b gh-pages-test && git merge master",
+    "clean-for-deploy": "npm-run-all clean-source clean-configs",
+    "clean-source": "rimraf ./public ./node_modules ./scripts ./server ./test",
+    "clean-configs": "rimraf .gitignore  ./.vscode *.yml *.log *.json webpack.config.js",
+    "move-dist-to-root": "mv ./public/dist ./",
+    "push-to-deploy": "git commit -am 'autodeploy' && git push origin gh-pages-test",
+    "github-deploy": "npm-run-all switch-to-deploy build clean-for-deploy push-to-deploy"
   },
   "repository": {
     "type": "git",
