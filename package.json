@@ -29,7 +29,7 @@
     "start-web-server": "node server/startup.js",
     "start": "npm run start-web-server",
     "switch-to-deploy": "git checkout gh-pages-test && git merge master",
-    "clean-for-deploy": "npm-run-all clean-source clean-configs",
+    "clean-for-deploy": "npm-run-all clean-configs clean-source",
     "clean-source": "rimraf ./public ./node_modules ./scripts ./server ./test",
     "clean-configs": "rimraf .gitignore  ./.vscode *.yml *.log *.log.* *.json webpack.config.js",
     "move-dist-to-root": "mv ./public/dist ./",
