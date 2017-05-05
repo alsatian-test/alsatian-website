@@ -70,7 +70,7 @@
     "@types/react-router": "^3.0.0",
     "@types/selenium-webdriver": "^2.53.38",
     "@types/serve-static": "^1.7.31",
-    "@types/watch": "0.0.28",
+    "@types/watch": "1.0.0",
     "breakpoint-sass": "^2.7.0",
     "browser-sync": "^2.17.5",
     "css-loader": "^0.26.1",
