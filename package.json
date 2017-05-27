@@ -34,7 +34,9 @@
     "clean-configs": "rimraf .gitignore  ./.vscode *.yml *.log *.log.* webpack.config.js",
     "move-dist-to-root": "mv ./public/dist ./",
     "push-to-deploy": "git commit -am 'autodeploy' && git push origin gh-pages-test",
-    "github-deploy": "npm-run-all switch-to-deploy build move-dist-to-root clean-for-deploy push-to-deploy"
+    "github-deploy": "npm-run-all switch-to-deploy build move-dist-to-root clean-for-deploy push-to-deploy",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -57,7 +59,8 @@
     "react-dom": "^15.2.0",
     "react-router": "^3.0.0",
     "redux": "^3.5.2",
-    "serve-static": "^1.11.1"
+    "serve-static": "^1.11.1",
+    "snyk": "^1.31.0"
   },
   "devDependencies": {
     "@types/compression": "0.0.33",
@@ -91,5 +94,6 @@
     "typescript": "^2.1.4",
     "watch": "^1.0.1",
     "webpack": "^2.2.0"
-  }
+  },
+  "snyk": true
 }
