@@ -85,7 +85,7 @@
     "sass-loader": "^6.0.2",
     "selenium-webdriver": "^3.0.1",
     "style-loader": "^0.13.1",
-    "susy": "^2.2.12",
+    "susy": "^3.0.0",
     "ts-loader": "^2.0.0",
     "tslint": "^4.0.2",
     "typescript": "^2.1.4",
