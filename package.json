@@ -84,7 +84,7 @@
     "sass-lint": "^1.10.2",
     "sass-loader": "^6.0.2",
     "selenium-webdriver": "^3.0.1",
-    "style-loader": "^0.13.1",
+    "style-loader": "^0.20.0",
     "susy": "^2.2.12",
     "ts-loader": "^2.0.0",
     "tslint": "^4.0.2",
