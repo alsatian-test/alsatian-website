@@ -50,7 +50,7 @@
     "alsatian": "^1.0.0",
     "compression": "^1.6.2",
     "express": "^4.14.0",
-    "highlight.js": "^9.8.0",
+    "highlight.js": "^9.15.5",
     "monaco-editor": "^0.8.0",
     "prismjs": "^1.5.1",
     "react": "^15.2.0",
