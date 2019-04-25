@@ -81,7 +81,7 @@
     "npm-run-all": "^4.0.0",
     "onchange": "^3.0.2",
     "rimraf": "^2.6.1",
-    "sass-lint": "^1.10.2",
+    "sass-lint": "^1.13.0",
     "sass-loader": "^6.0.2",
     "selenium-webdriver": "^3.0.1",
     "style-loader": "^0.13.1",
